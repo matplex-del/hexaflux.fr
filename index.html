@@ -35,7 +35,7 @@ header{display:flex;align-items:center;justify-content:space-between;padding:28p
 .dot{width:7px;height:7px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 0 #2FD39A88;animation:pulse 2.4s infinite}
 @keyframes pulse{0%{box-shadow:0 0 0 0 #2FD39A88}70%{box-shadow:0 0 0 10px #2FD39A00}100%{box-shadow:0 0 0 0 #2FD39A00}}
 
-.hero{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:40px;min-height:calc(100vh - 200px);padding:40px 0 60px}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:40px;min-height:calc(100vh - 190px);padding:20px 0 40px}
 .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--acc)}
 .eyebrow:before{content:"";width:28px;height:1px;background:var(--acc)}
 h1{font-weight:600;font-size:clamp(44px,6.4vw,88px);line-height:.98;letter-spacing:-.045em;margin:22px 0 26px}
@@ -90,7 +90,7 @@ h1 em{font-style:normal;background:linear-gradient(100deg,#fff 0%,#C9F5E4 35%,va
 .final p{position:relative;color:var(--mut);font-size:18px;line-height:1.55;max-width:620px;margin-top:16px;font-weight:300}
 .final .cta{position:relative}
 
-footer{border-top:1px solid var(--line);padding:30px 0 46px;display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap;color:var(--dim);font-size:13.5px}
+footer{padding:18px 0 28px;display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap;color:var(--dim);font-size:13.5px}
 footer .left{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
 footer .word{font-size:18px;color:var(--tx)}
 details{max-width:560px}
@@ -157,14 +157,6 @@ details div{line-height:1.7}
     <div>
       <div class="eyebrow reveal">L'intelligence économique et territoriale en flux continu</div>
       <h1 class="reveal">Lire ce que <em>personne</em> ne sait lire.</h1>
-      <p class="lead reveal">Hexaflux consolide <strong>toute la donnée publique disponible</strong> sur les entreprises et les territoires, la <strong>met à jour en continu</strong> et la <strong>croise</strong> avec ce qui se débat, se publie et se décide le jour même.</p>
-      <div class="cta reveal">
-        <a class="btn primary" href="mailto:contact@hexaflux.fr?subject=Pr%C3%A9venez-moi%20du%20lancement%20d%27Hexaflux&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20%C3%AAtre%20pr%C3%A9venu(e)%20du%20lancement%20d%27Hexaflux.%0A%0ANom%20%3A%0AOrganisation%20%3A%0AFonction%20%3A%0A">
-          Être prévenu du lancement
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a class="btn ghost" href="mailto:partenariats@hexaflux.fr?subject=Partenariat%20Hexaflux">Partenaires et revendeurs</a>
-      </div>
     </div>
     <div class="emblem reveal" id="emblem">
       <div class="halo"></div><div class="ring"></div><div class="ring r2"></div>
@@ -172,65 +164,9 @@ details div{line-height:1.7}
     </div>
   </section>
 
-  <section class="tagline reveal">
-    <p>Toute la donnée disponible, <b>actualisée et croisée</b>, pour l'intelligence économique et territoriale.</p>
-    <div class="chips">
-      <span class="chip">100 % données publiques</span>
-      <span class="chip">Sourcé phrase par phrase</span>
-      <span class="chip">Conçu en Occitanie</span>
-    </div>
-  </section>
-
-  <section class="cols">
-    <article class="card reveal">
-      <div class="num">01</div>
-      <h3>Lire</h3>
-      <p>Des agents d'intelligence artificielle lisent et codent les documents publics que personne ne déchiffre : rapports, délibérations, accords, décisions.</p>
-    </article>
-    <article class="card reveal">
-      <div class="num">02</div>
-      <h3>Croiser</h3>
-      <p>Chaque information est reliée dans un modèle commun, puis mise en perspective avec l'actualité, les débats et les chiffres nationaux.</p>
-    </article>
-    <article class="card reveal">
-      <div class="num">03</div>
-      <h3>Livrer</h3>
-      <p>Pas une base à fouiller : le travail fait. Des analyses prêtes à l'action, sourcées phrase par phrase, livrées directement dans votre boîte mail.</p>
-    </article>
-  </section>
-
-  <section class="for">
-    <h2 class="reveal">Pour celles et ceux qui décident <span>avant les autres</span>.</h2>
-    <div class="list">
-      <div class="row reveal">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg></div>
-        <div><h4>Entreprises</h4><p>Savoir où sont les affaires, avant vos concurrents : projets, marchés, besoins qui émergent sur votre territoire.</p></div>
-      </div>
-      <div class="row reveal">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 5v2H3V7l9-5zM5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 21h18"/></svg></div>
-        <div><h4>Collectivités et acteurs publics</h4><p>Piloter l'action publique sur des faits consolidés : aides, investissements, dynamiques économiques, comparaisons entre territoires.</p></div>
-      </div>
-      <div class="row reveal">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="3"/><circle cx="5" cy="17" r="3"/><circle cx="19" cy="17" r="3"/><path d="M10 9.5 6.5 14.5M14 9.5l3.5 5M8 17h8"/></svg></div>
-        <div><h4>Fédérations et corps intermédiaires</h4><p>Éclairer vos adhérents et vos positions avec une lecture continue de votre secteur.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="final reveal">
-    <h2>La donnée publique est partout. Hexaflux la rend lisible.</h2>
-    <p>Nous préparons le lancement. Laissez-nous votre adresse : vous serez parmi les premiers à découvrir Hexaflux.</p>
-    <div class="cta">
-      <a class="btn primary" href="mailto:contact@hexaflux.fr?subject=Pr%C3%A9venez-moi%20du%20lancement%20d%27Hexaflux&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20%C3%AAtre%20pr%C3%A9venu(e)%20du%20lancement%20d%27Hexaflux.%0A%0ANom%20%3A%0AOrganisation%20%3A%0AFonction%20%3A%0A">Être prévenu du lancement
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <a class="btn ghost" href="mailto:contact@hexaflux.fr">contact@hexaflux.fr</a>
-    </div>
-  </section>
-
   <footer>
     <div class="left">
-      <span class="lockup"><svg width="26" height="26" aria-hidden="true" style="color:#FFFFFF;--n:#2FD39A;--g:#0C1B1A"><use href="#mark"/></svg><span class="word"><b>hexa</b><span>flux</span></span></span>
-      <span>© 2026 Hexaflux · Ce site ne dépose aucun cookie et ne mesure pas votre navigation.</span>
+      <span>© 2026 Hexaflux</span>
     </div>
     <details>
       <summary>Mentions légales</summary>
@@ -240,7 +176,7 @@ details div{line-height:1.7}
         Directeur de la publication : Mathieu Daupleix, président.<br>
         Contact : <a href="mailto:contact@hexaflux.fr">contact@hexaflux.fr</a><br>
         Hébergeur : GitHub, Inc. (GitHub Pages), 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis<br>
-        Données personnelles : <a href="mailto:rgpd@hexaflux.fr">rgpd@hexaflux.fr</a>
+        Données personnelles : <a href="mailto:rgpd@hexaflux.fr">rgpd@hexaflux.fr</a>. Ce site ne dépose aucun cookie et ne mesure pas votre navigation.
       </div>
     </details>
   </footer>
